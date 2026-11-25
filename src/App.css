@@ -113,6 +113,34 @@ a {
   color: #fff;
 }
 
+/* ---------- Danh mục hoa tươi ---------- */
+.category-section {
+  margin-bottom: 32px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.category-chip {
+  background: #fff;
+  color: #1b4332;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #cce3d6;
+  box-shadow: 0 1px 3px rgba(27, 67, 50, 0.05);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.category-chip:hover {
+  border-color: #2d6a4f;
+  background: #ecfdf5;
+}
+
 /* ---------- Danh sách sản phẩm ---------- */
 main {
   padding: 32px 0;
