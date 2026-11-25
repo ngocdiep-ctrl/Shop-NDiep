@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Banner from "./components/Banner";
 import ProductList from "./components/ProductList";
 import Footer from "./components/Footer";
 import { products } from "./data/products";
@@ -9,7 +10,10 @@ function App() {
     <>
       <Header />
       <main>
-        <ProductList title="Mẫu hoa tươi nổi bật" items={products} />
+        <Banner />
+        <div id="products">
+          <ProductList title="Mẫu hoa tươi nổi bật" items={products} />
+        </div>
       </main>
       <Footer />
     </>
