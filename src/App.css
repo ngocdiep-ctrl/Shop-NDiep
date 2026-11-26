@@ -240,6 +240,11 @@ main {
   background: #9ca3af;
 }
 
+/* ---------- Lab 2: Khoảng cách các khu sản phẩm ---------- */
+.product-sections section + section {
+  margin-top: 40px;
+}
+
 /* ---------- Footer ---------- */
 .footer {
   background: #0f1b2d;
