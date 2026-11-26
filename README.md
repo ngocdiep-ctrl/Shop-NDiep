@@ -20,7 +20,7 @@ Trang chủ tiệm hoa tươi **Shop-NDiep** xây dựng bằng **React + TypeSc
     │   └── products.ts       # Kiểu dữ liệu Product & danh sách 6 loại hoa
     ├── utils/
     │   ├── format.ts         # Định dạng tiền tệ formatPrice
-    │   ├── product.ts        # getCategories & filterProducts
+    │   ├── product.ts        # getCategories, filterProducts, searchByPriceRange, groupByCategory
     │   └── cart.ts           # 5 hàm xử lý giỏ hàng bất biến
     ├── App.tsx
     ├── App.css

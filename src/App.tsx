@@ -13,6 +13,9 @@ function App() {
     sort: "asc",
   });
   const bouquets = filterProducts(products, { category: "Hoa bó" });
+  const lowStockFlowers = products.filter(
+    (p) => p.stock >= 1 && p.stock <= 5
+  );
 
   return (
     <>
@@ -27,6 +30,10 @@ function App() {
             items={affordableFlowers}
           />
           <ProductList title="Bộ sưu tập Hoa bó" items={bouquets} />
+          <ProductList
+            title="Sản phẩm sắp hết hàng"
+            items={lowStockFlowers}
+          />
         </div>
       </main>
       <Footer />

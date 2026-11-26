@@ -9,7 +9,12 @@ import {
 } from "../src/utils/cart.ts";
 import type { CartItem } from "../src/utils/cart.ts";
 import { formatPrice } from "../src/utils/format.ts";
-import { filterProducts, getCategories } from "../src/utils/product.ts";
+import {
+  filterProducts,
+  getCategories,
+  searchByPriceRange,
+  groupByCategory,
+} from "../src/utils/product.ts";
 
 let cart: CartItem[] = [];
 cart = addToCart(cart, products[0]);    // Bó hoa hồng tươi sắc thắm x1
@@ -36,3 +41,10 @@ console.log(
     (p) => p.name
   )
 );
+
+// Bài tập về nhà Lab 2
+console.log(
+  "Khoảng giá 300k - 500k:",
+  searchByPriceRange(products, 300000, 500000).map((p) => p.name)
+);
+console.log("Số sản phẩm theo danh mục:", groupByCategory(products));

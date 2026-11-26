@@ -241,7 +241,7 @@ main {
 }
 
 /* ---------- Lab 2: Khoảng cách các khu sản phẩm ---------- */
-.product-sections section + section {
+.product-sections section+section {
   margin-top: 40px;
 }
 
@@ -252,7 +252,7 @@ main {
   padding: 24px 0;
   font-size: 14px;
   line-height: 1.8;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
